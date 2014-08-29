@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class EventsControllerTest < ActionController::TestCase
+  include Devise::TestHelpers
+  fixtures :events
+  fixtures :users
   setup do
+    sign_in users(:one)
     @event = events(:one)
   end
 
