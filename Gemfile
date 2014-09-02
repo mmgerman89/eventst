@@ -40,6 +40,7 @@ gem 'devise', github: 'plataformatec/devise'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
+gem 'friendly_id', '5.0.0.beta1'
 
 group :development do
   gem 'spring'
